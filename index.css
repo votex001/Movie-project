@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    background-color: #121212;
+}
+header{
+    width: 100vw;
+    height: 208px;
+    background-image: url(/Photos/image36.png);
+    background-size: cover;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-weight: 800;
+    font-size: 3vw;
+    margin-left: 30vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nov{
+   margin-right: 10vw;
+}
+#search{
+    position: absolute;
+    left: 50%;
+    top: 208px;
+    transform: translate(-50%,-50%);
+    display: inline-flex;
+    background-color: #2E2E2F;
+    border-radius: 6px;
+}
+#search > label{
+    padding: 0 20px;
+    margin-top: 11px;
+}
+
+input{
+    background-color: #2E2E2F;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    height: 38px;
+    width: 50vw;
+}
+.search-button{
+    border-radius: 0 6px 6px 0;
+    color: white;
+    background-color: #4B4B4B;
+    border: none;
+    width: 10vw;
+}
+.search-list{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100vw;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #787878;
+}
+
+.group{
+    width: 296px;
+    height: 180px;
+}
+.add{
+    margin: 10px auto 0 auto;
+    font-size: 25px;
+}
+.add .plus{
+    margin-right: 5px;
+}
+/* .buttons{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    gap: 10px;
+    margin: 30px 30px 0px;
+    text-align: center;
+    justify-content: center;
+} */
+#pagination{
+    /* width: 700px; */
+    position: absolute;
+    text-align: center;
+    user-select: none;
+    bottom: 30px;
+    
+}
+
+#pagination li{
+    display: inline-block;
+    margin: 5px;
+}
+#pagination li a{
+    font-size: 1.2em;
+    line-height: 45px;
+}
+.previous-page, .next-page{
+    background-color: #0ab1ce;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.current-page, .dots{
+    background-color: #2E2E2F;
+    width: 45px; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active{
+    background-color: #0ab1ce;
+}
+.disable{
+    background-color: #2E2E2F;
+}
+.poster{
+    width: 100px;
+}
+.movies-cantainer{
+    overflow-y: auto;
+    height: 620px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.goSearch{
+    position: absolute;
+    top: 50%;
+    height: 200px;
+}
+.movie{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.img{
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flex > button{
+    background-color: #121212;
+    display: flex;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    align-items: center;
+}
+
+.title-container p,h2,.info p,.plot p{
+    margin: 0;
+}
+.title-container,.plot{
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 0;
+}
+.title-container{
+    margin-top: 20px;
+    text-overflow: hidden;
+}
+.title-container .title{
+    max-width: 250px;
+    display: block;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info{
+    margin-left: 10px;
+}
+.plot{
+    text-align: start;
+    width: 328px;
+    color: #787878;
+}
+.plot p a{
+    cursor: pointer;
+    color: white;
+}
+.empty{
+    margin-top: 200px;
+    font-size: 40px;
+}
+
+/* tablet desigh */
+@media(max-width: 1200px){
+    h1{
+        font-size: 6vw;
+        margin-left: 10vw;
+    }
+}
+
+/* phone design */
+
+@media(max-width: 600px){
+.movies-cantainer{padding-bottom: 120px;}
+.empty{
+    font-size: 20px;
+}
+h1{
+    font-size: 6.5vw;
+    margin-left: 10vw;
+} 
+.nov{
+    margin-right: 3vw;
+    font-size: 4vw;
+ }
+ #search > label{
+    padding: 0 10px;
+    margin-top: 11px;
+}
+.card{
+    justify-content: start;
+}
+
+.search-button{width: 15vw;}
+ .poster{
+    width: 70px;
+    padding-top: 10px;
+}
+.title-container{margin-top: 0px;}
+.title-container .title{
+    width: 220px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.info{
+    gap: 15px;
+    /* flex-direction: column; */
+    align-items: start;
+}
+.info > div{
+    align-items: start;
+    flex-direction: column;
+    width: 175px;
+    gap: 0;
+    white-space: nowrap;
+
+}
+.plot{
+    text-align: start;
+    width: 250px;
+    color: #787878;
+}
+#pagination li a{line-height: 30px;}
+.current-page, .dots{width: 30px;}
+#pagination {font-size: 10px;}
+
+}
+@media(max-width: 470px){
+    #pagination li a{line-height: 20px;}
+    .current-page, .dots{width: 20px;}
+    #pagination {font-size: 10px;}
+}
