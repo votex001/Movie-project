@@ -59,6 +59,11 @@ input{
     height: 38px;
     width: 50vw;
 }
+/* autofill color white disable  */
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s;
+  }
 .search-button{
     border-radius: 0 6px 6px 0;
     color: white;
