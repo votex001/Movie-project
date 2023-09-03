@@ -95,8 +95,17 @@ input:-webkit-autofill,
 .add .plus{
     margin-right: 5px;
 }
-
+/* .buttons{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    gap: 10px;
+    margin: 30px 30px 0px;
+    text-align: center;
+    justify-content: center;
+} */
 #pagination{
+    /* width: 700px; */
     position: absolute;
     text-align: center;
     user-select: none;
@@ -141,7 +150,6 @@ input:-webkit-autofill,
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    border-bottom: 1px solid #2E2E2F;
 }
 
 .goSearch{
@@ -153,7 +161,6 @@ input:-webkit-autofill,
     display: flex;
     color: white;
     justify-content: center;
-    
 }
 
 .img{
@@ -223,10 +230,7 @@ input:-webkit-autofill,
 /* phone design */
 
 @media(max-width: 600px){
-.movies-cantainer{
-    padding-bottom: 120px;
-    border-bottom: none;
-}
+.movies-cantainer{padding-bottom: 120px;}
 .empty{
     font-size: 20px;
 }
@@ -244,7 +248,6 @@ h1{
 }
 .card{
     justify-content: start;
-    border-bottom: 1px solid #2E2E2F;
 }
 
 .search-button{width: 15vw;}
