@@ -153,6 +153,7 @@ input:-webkit-autofill,
     display: flex;
     color: white;
     justify-content: center;
+    
 }
 
 .img{
@@ -222,7 +223,10 @@ input:-webkit-autofill,
 /* phone design */
 
 @media(max-width: 600px){
-.movies-cantainer{padding-bottom: 120px;}
+.movies-cantainer{
+    padding-bottom: 120px;
+    border-bottom: none;
+}
 .empty{
     font-size: 20px;
 }
@@ -240,6 +244,7 @@ h1{
 }
 .card{
     justify-content: start;
+    border-bottom: 1px solid #2E2E2F;
 }
 
 .search-button{width: 15vw;}
