@@ -20,6 +20,7 @@ document.addEventListener("click", e=>{
   if(e.target.dataset.watch){
     
     module.push(e.target.dataset.watch)
+// removes id written several times in a row
     const makeUniq = (arr) => {const uniqSet = new Set(arr);return uniqSet;}
    LS.setItem('data',JSON.stringify(Array.from(makeUniq(module))))
     
