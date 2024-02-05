@@ -23,7 +23,8 @@ document.addEventListener("click", e=>{
 // removes id written several times in a row
     const makeUniq = (arr) => {const uniqSet = new Set(arr);return uniqSet;}
   
-// pushing items to Local Storage LS.setItem('data',JSON.stringify(Array.from(makeUniq(module))))
+// pushing items to Local Storage
+ LS.setItem('data',JSON.stringify(Array.from(makeUniq(module))))
     
   }
 })
